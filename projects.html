@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : ElegantBlue
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120108
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Judith Abécassis</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css' />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+    <div id="header-wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="#">Judith Abécassis</a></h1>
+            </div>
+        </div>
+    </div>
+    <!-- end #header -->
+    <div id="menu-wrapper">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li class="current_page_item"><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+		<li><a href="teaching.html">Teaching</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end #menu -->
+    <div id="page">
+        <div id="page-bgtop">
+            <div id="page-bgbtm">
+                <div id="page-content">
+                    <div id="content">
+                        <div class="post">
+                            <h2 class="title"><a href="#">CloneSig: Joint inference of intra-tumor heterogeneity and signature deconvolution in tumor bulk sequencing data</a></h2>
+                            <p>The possibility to sequence DNA in cancer samples has triggered much effort recently to identify the forces at the genomic level that shape tumorigenesis and cancer progression. It has resulted in novel understanding or clarification of two important aspects of cancer genomics: (i) intra-tumor heterogeneity (ITH), as captured by the variability in observed prevalences of somatic mutations within a tumor, and (ii) mutational processes, as revealed by the distribution of the types of somatic mutation and their immediate nucleotide context. These two aspects are not independent from each other, as different mutational processes can be involved in different subclones, but current computational approaches to study them largely ignore this dependency. In particular, sequential methods that first estimate subclones and then analyze the mutational processes active in each clone can easily miss changes in mutational processes if the clonal decomposition step fails, and conversely information regarding mutational signatures is overlooked during the subclonal reconstruction. To address current limitations, we present CloneSig, a new computational method to jointly infer ITH and mutational processes in a tumor from bulk-sequencing data, including whole-exome sequencing (WES) data, by leveraging their dependency. We show through an extensive benchmark on simulated samples that CloneSig is always as good as or better than state-of-the-art methods for ITH inference and detection of mutational processes. We then apply CloneSig to a large cohort of 8,954 tumors with WES data from the cancer genome atlas (TCGA), where we obtain results coherent with previous studies on whole-genome sequencing (WGS) data, as well as new promising findings. This validates the applicability of CloneSig to WES data, paving the way to its use in a clinical setting where WES is increasingly deployed nowadays.
+                            <br>[<a href="https://www.biorxiv.org/content/10.1101/825778v1">preprint</a>][<a href="https://github.com/judithabk6/Clonesig_analysis"> analysis code</a>][<a href="https://github.com/judithabk6/clonesig">package</a>]</p>
+
+
+                            <h2 class="title"><a href="#">Application of intra-tumor heterogeneity reconstruction: robustness and clinical perspectives</a></h2>
+                            <div class="entry">
+                                <p>Tumors are made of evolving and heterogeneous populations of cells which arise from successive appearance and expansion of subclonal populations, following acquisition of mutations conferring them a selective advantage. Those subclonal populations can be sensitive or resistant to different treatments, and provide information about tumor aetiology and future evolution. Hence, it is important to be able to assess the level of heterogeneity of tumors with high reliability for clinical applications. In the past few years, a large number of methods have been proposed to estimate intra-tumor heterogeneity from whole exome sequencing (WES) data, but the accuracy and robustness of these methods on real data remains elusive. Here we systematically apply and compare 6 computational methods to estimate tumor heterogeneity on 1,697 WES samples from the cancer genome atlas (TCGA) covering 3 cancer types (breast invasive carcinoma, bladder urothelial carcinoma, and head and neck squamous cell carcinoma), and two distinct input mutation sets. We observe significant differences between the estimates produced by different methods, and identify several likely confounding factors in heterogeneity assessment for the different methods. We further show that the prognostic value of tumor heterogeneity for survival prediction is limited in those datasets, and find no evidence that it improves over prognosis based on other clinical variables. In conclusion, heterogeneity inference from WES data on a single sample, and its use in cancer prognosis, should be considered with caution. Other approaches to assess intra-tumoral heterogeneity such as those based on multiple samples may be preferable for clinical applications.
+                                <br>[<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224143">article</a>][<a href="https://github.com/judithabk6/ITH_TCGA">code</a>]</p>
+
+                            </div>
+                        </div>
+                            <h2 class="title"><a href="#">Participation to the DREAM Somatic Mutation Calling Meta-pipeline Challenge</a></h2>
+                            <div class="entry">
+                                <p>Mutation calling is an essential processing step in the analysis of cancer genomes. It allows researchers and physicians to detect potential driver alterations, that can inform the patient's prognosis and treatment strategy by resorting to targeted therapies. Variant calling is a difficult task, as variants are confounded by sequencing errors, artefacts from the library preparation and amplification steps, and other alterations (small insertions and deletions, larger structural variants). Each variant caller implements a heuristic strategy to ensure a sensitive detection of even low frequency variants (present in a small proportion of the sequenced tissue sample), while keeping a high specificity with a low false positive rate. However, combining several variant callers may enhance the final results, beyond any individual performances. That is the problem proposed to the community in this challenge. We implemented two main ideas: very simple aggregations (variants of majority vote), and more advanced learning strategies with a classifier trained on both genomic features (read counts, GC content of the region, homopolymer rate etc) and an aggregate of a individual variant callings. The final leaderboard is accessible <a href="https://www.synapse.org/#!Synapse:syn4588939/wiki/233672">here</a>.</p>
+
+                            </div>
+                        </div>
+                    
+                        <div style="clear: both;">&nbsp;</div>
+                    </div>
+                    <!-- end #content -->
+                    <!--
+                    <div id="sidebar">
+                        <ul>
+                            <li>
+                                <h2>Aliquam tempus</h2>
+                                <p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+                            </li>
+                            <li>
+                                <h2>Categories</h2>
+                                <ul>
+                                    <li><a href="#">Aliquam libero</a></li>
+                                    <li><a href="#">Consectetuer adipiscing elit</a></li>
+                                    <li><a href="#">Metus aliquam pellentesque</a></li>
+                                    <li><a href="#">Suspendisse iaculis mauris</a></li>
+                                    <li><a href="#">Urnanet non molestie semper</a></li>
+                                    <li><a href="#">Proin gravida orci porttitor</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>Blogroll</h2>
+                                <ul>
+                                    <li><a href="#">Aliquam libero</a></li>
+                                    <li><a href="#">Consectetuer adipiscing elit</a></li>
+                                    <li><a href="#">Metus aliquam pellentesque</a></li>
+                                    <li><a href="#">Suspendisse iaculis mauris</a></li>
+                                    <li><a href="#">Urnanet non molestie semper</a></li>
+                                    <li><a href="#">Proin gravida orci porttitor</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>Archives</h2>
+                                <ul>
+                                    <li><a href="#">Aliquam libero</a></li>
+                                    <li><a href="#">Consectetuer adipiscing elit</a></li>
+                                    <li><a href="#">Metus aliquam pellentesque</a></li>
+                                    <li><a href="#">Suspendisse iaculis mauris</a></li>
+                                    <li><a href="#">Urnanet non molestie semper</a></li>
+                                    <li><a href="#">Proin gravida orci porttitor</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    -->
+                    <!-- end #sidebar -->
+
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!-- end #page -->
+</div>
+<div id="footer">
+    <p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
